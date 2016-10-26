@@ -39,12 +39,12 @@ void loop()
   		count = 0;
   		Serial.println("BOO");
 
-  		digitalWrite(witchRelay, HIGH);
   		digitalWrite(thunderPin, LOW);
   		FlashDMX(255,255,0,255,300,200);
   		FlashDMX(255,255,255,255,200,100);
-  		FlashDMX(255,255,255,255,600,300);
+  		FlashDMX(255,255,255,255,2000,300);
   		digitalWrite(thunderPin, HIGH);
+  		digitalWrite(witchRelay, HIGH);
   		delay(18000);
   		digitalWrite(witchRelay, LOW);
 

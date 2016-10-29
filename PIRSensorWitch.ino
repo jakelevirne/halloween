@@ -43,9 +43,14 @@ void loop()
   		FlashDMX(255,255,0,255,300,200);
   		FlashDMX(255,255,255,255,200,100);
   		FlashDMX(255,255,255,255,2000,300);
+   		FlashDMX(255,255,0,255,300,200);
+  		FlashDMX(255,255,255,255,200,100);
+
   		digitalWrite(thunderPin, HIGH);
   		digitalWrite(witchRelay, HIGH);
-  		delay(18000);
+  		
+   		FlashDMX(255,255,255,255,18000,300);
+  		//delay(18000);
   		digitalWrite(witchRelay, LOW);
 
 
@@ -62,7 +67,7 @@ void FlashDMX(int c1, int c2, int c3, int c4, int delayOn, int delayOff)
 {
    	DmxMaster.write(1,c1);
   	DmxMaster.write(2,c2);
- 	DmxMaster.write(3,c3);
+ 	  DmxMaster.write(3,c3);
   	DmxMaster.write(4,c4);
   	delay(delayOn);
   	DmxMaster.write(1,0);

@@ -30,7 +30,9 @@ const int whiteButtonPin = 2;     // the number of the white pushbutton pin
 const int blueButtonPin = 3;     // the number of the white pushbutton pin
 const int doorPin =  7;      // the number of the coffin door transistor base pin
 const int reaperPin =  8;      // the number of the reaper transistor base pin
+const int sensorpin1 = 0;                 // analog pin used to connect the PIR sensor
 
+float dist1 = 0.0;                 // variable to store the distance from sensor(initially zero)
 
 // variables will change:
 int whiteButtonState = 0;         // variable for reading the white pushbutton status
@@ -43,9 +45,60 @@ void setup() {
   // initialize the pushbutton pins as an input:
   pinMode(whiteButtonPin, INPUT);
   pinMode(blueButtonPin, INPUT);
+  
+  Serial.begin(9600);               // starts the serial monitor
+  delay(3000);
 }
 
 void loop() {
+    
+  dist1 = analogRead(sensorpin1);       // reads the value of the sharp sensor
+  Serial.print("S1:");
+  Serial.println(dist1);            // prints the value of the sensor to the serial monitor
+ 
+  if (dist1 > 500.0)
+  {
+  	Serial.println("BOO");
+
+  	digitalWrite(doorPin, HIGH);
+  	delay(300);
+  	digitalWrite(doorPin, LOW);
+  	delay(500);
+
+  	digitalWrite(doorPin, HIGH);
+  	delay(300);
+  	digitalWrite(doorPin, LOW);
+  	delay(500);
+
+  	digitalWrite(doorPin, HIGH);
+  	delay(300);
+  	digitalWrite(doorPin, LOW);
+  	delay(700);
+
+  	digitalWrite(doorPin, HIGH);
+  	delay(300);
+  	digitalWrite(doorPin, LOW);
+  	delay(500);
+
+  	digitalWrite(doorPin, HIGH);
+  	delay(300);
+  	digitalWrite(doorPin, LOW);
+  	delay(500);
+
+  	digitalWrite(doorPin, HIGH);
+  	delay(00);
+  	digitalWrite(doorPin, LOW);
+  	delay(500);
+  	delay(5000);
+
+  	digitalWrite(doorPin, HIGH);
+  	digitalWrite(reaperPin, HIGH);
+  	delay(1000);
+  	digitalWrite(reaperPin, LOW);
+  	delay(13000);
+  	digitalWrite(doorPin, LOW);
+  }
+  
   // read the state of the pushbutton values:
   whiteButtonState = digitalRead(whiteButtonPin);
   blueButtonState = digitalRead(blueButtonPin);

@@ -26,30 +26,44 @@
 
 // constants won't change. They're used here to
 // set pin numbers:
-const int whitePin = 2;     // the number of the white pushbutton pin
-const int ledPin =  7;      // the number of the LED pin
+const int whiteButtonPin = 2;     // the number of the white pushbutton pin
+const int blueButtonPin = 3;     // the number of the white pushbutton pin
+const int doorPin =  7;      // the number of the coffin door transistor base pin
+const int reaperPin =  8;      // the number of the reaper transistor base pin
+
 
 // variables will change:
-int buttonState = 0;         // variable for reading the pushbutton status
+int whiteButtonState = 0;         // variable for reading the white pushbutton status
+int blueButtonState = 0;         // variable for reading the blue pushbutton status
 
 void setup() {
-  // initialize the LED pin as an output:
-  pinMode(ledPin, OUTPUT);
-  // initialize the pushbutton pin as an input:
-  pinMode(buttonPin, INPUT);
+  // initialize the door and reaper pins as an output:
+  pinMode(doorPin, OUTPUT);
+  pinMode(reaperPin, OUTPUT);  
+  // initialize the pushbutton pins as an input:
+  pinMode(whiteButtonPin, INPUT);
+  pinMode(blueButtonPin, INPUT);
 }
 
 void loop() {
-  // read the state of the pushbutton value:
-  buttonState = digitalRead(buttonPin);
+  // read the state of the pushbutton values:
+  whiteButtonState = digitalRead(whiteButtonPin);
+  blueButtonState = digitalRead(blueButtonPin);
 
   // check if the pushbutton is pressed.
   // if it is, the buttonState is HIGH:
-  if (buttonState == HIGH) {
-    // turn LED on:
-    digitalWrite(ledPin, HIGH);
+  if (blueButtonState == HIGH) {
+    // turn coffin door and reaper on:
+    digitalWrite(doorPin, HIGH);
+    digitalWrite(reaperPin, HIGH);
+  } else if (whiteButtonState == HIGH) {
+    // turn coffin door on and reaper off:
+    digitalWrite(doorPin, HIGH);
+    digitalWrite(reaperPin, LOW);
   } else {
-    // turn LED off:
-    digitalWrite(ledPin, LOW);
+    // turn coffin door and reaper off:
+    digitalWrite(doorPin, LOW);
+    digitalWrite(reaperPin, LOW);
+
   }
 }

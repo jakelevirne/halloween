@@ -18,6 +18,9 @@ Solenoid positive (+) wired to Vin, using 12V, 1.5A power adapter (labelled DVE)
 Solenoid transistor is S8050; 470 ohm resistor (yellow, purple, brown, gold) to base
 Reaper transistor is 2N3904 (https://www.sparkfun.com/datasheets/Components/2N3904.pdf)
 Reaper transistor has 1kOhm resistor (brown, black, red, gold) to the base
+HC-SR501 PIR sensor (half covered in electrical tape, and nobs adjusted)
+https://www.mpja.com/download/31227sc.pdf
+
  */
 
 // constants won't change. They're used here to

@@ -1,6 +1,6 @@
 //How it's wired:
 //Headphone connector to powered speaker.  Tip of headphone connector to GND, lowest part of headphone barrel to pin11
-
+//Used instructions found here: http://highlowtech.org/?p=1963
 #include <PCM.h>
 
 const unsigned char sample[] PROGMEM = {

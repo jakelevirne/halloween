@@ -1,33 +1,29 @@
 /*
-  Button
 
- Turns on and off a light emitting diode(LED) connected to digital
- pin 13, when pressing a pushbutton attached to pin 2.
+This is for controlling the coffin and reaper props.  The effect is to cause the coffin door to
+bang and then for the coffin door to swing open and allow the reaper to fall forward as it plays
+its startle sound.
 
+The coffin is controlled using pneumatics and a solenoid that is tripped using a transistor.  
+The reaper is controlled by a transistor acting as a switch, connected to the "demo" jack of the reaper. 
 
- The circuit:
- * LED attached from pin 13 to ground
- * pushbutton attached to pin 2 from +5V
- * 10K resistor attached to pin 2 from ground
+The entire setup is meant to be controlled in two ways:
+-manually using two push-buttons (one for banging the door, and one for opening the door and 
+triggering the reaper startle).
+-or automatically tripped by the victim passing by the PIR sensor set several feet ahead of the prop
 
- * Note: on most Arduinos there is already an LED on the board
- attached to pin 13.
-
-
- created 2005
- by DojoDave <http://www.0j0.org>
- modified 30 Aug 2011
- by Tom Igoe
-
- This example code is in the public domain.
-
- http://www.arduino.cc/en/Tutorial/Button
+How it's wired:
+Two transistors- one for reaper and one for pneumatic solenoid (4V210-N08-DC12V-W)
+Solenoid positive (+) wired to Vin, using 12V, 1.5A power adapter (labelled DVE)
+Solenoid transistor is S8050; 470 ohm resistor (yellow, purple, brown, gold) to base
+Reaper transistor is 2N3904 (https://www.sparkfun.com/datasheets/Components/2N3904.pdf)
+Reaper transistor has 1kOhm resistor (brown, black, red, gold) to the base
  */
 
 // constants won't change. They're used here to
 // set pin numbers:
 const int whiteButtonPin = 2;     // the number of the white pushbutton pin
-const int blueButtonPin = 3;     // the number of the white pushbutton pin
+const int blueButtonPin = 3;     // the number of the blue pushbutton pin
 const int doorPin =  7;      // the number of the coffin door transistor base pin
 const int reaperPin =  8;      // the number of the reaper transistor base pin
 const int sensorpin1 = 0;                 // analog pin used to connect the PIR sensor

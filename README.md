@@ -1,10 +1,10 @@
 # Haunted House
 
-This is a [video](https://www.youtube.com/watch?v=yRpC1_ZGsWk) of the 3rd annual haunted house that my daughters (aged 7 and 8) and I put on for our neighborhood.  It's a great tradition for having fun, scaring our friends, and learning how to make new things.
+This is a [video](https://www.youtube.com/watch?v=yRpC1_ZGsWk&rel=0) of the 3rd annual haunted house that my daughters (aged 7 and 8) and I put on for our neighborhood.  It's a great tradition for having fun, scaring our friends, and learning how to make new things.
 
-[![Hanted house](https://img.youtube.com/vi/yRpC1_ZGsWk/0.jpg)](https://www.youtube.com/watch?v=yRpC1_ZGsWk)
+[![Hanted house](https://img.youtube.com/vi/yRpC1_ZGsWk/0.jpg)](https://www.youtube.com/watch?v=yRpC1_ZGsWk&rel=0)
 
-[Watch the video](https://www.youtube.com/watch?v=yRpC1_ZGsWk)
+[Watch the video](https://www.youtube.com/watch?v=yRpC1_ZGsWk&rel=0)
 
 All of the props, except for the spectral projection, are Arduino controlled, attached to IR sensors and pushbuttons.  This was the first year we introduced thunder along with the witch, and the all-new IKEA bed coffin.
 

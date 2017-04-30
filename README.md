@@ -1,13 +1,17 @@
 # Haunted House
 
-This is the 3rd annual haunted house that my daughters (aged 7 and 8) and I put on for our neighborhood:
+This is a [video](https://www.youtube.com/watch?v=yRpC1_ZGsWk) of the 3rd annual haunted house that my daughters (aged 7 and 8) and I put on for our neighborhood:
+
 [![Hanted house](https://img.youtube.com/vi/yRpC1_ZGsWk/0.jpg)](https://www.youtube.com/watch?v=yRpC1_ZGsWk)
 
 [Watch the video](https://www.youtube.com/watch?v=yRpC1_ZGsWk)
 
-All of the props, except for the spectral projection, are Arduino controlled, attached to IR sensors and pushbuttons.  We love to do our best to scare our friends, and this year we got two of them really good.  This was the first year we introduced thunder and the IKEA bed coffin.
+All of the props, except for the spectral projection, are Arduino controlled, attached to IR sensors and pushbuttons.  This was the first year we introduced thunder along with the witch, and the all-new IKEA bed coffin.
 
 ## Light up ghost
+![Light up ghost](https://cloud.githubusercontent.com/assets/51732/25567950/76afb4a2-2dc6-11e7-988d-d63e7122c591.jpg)
+
+This was a simple Halloween prop from Christmas Tree Shop.  I took it apart, found the trigger circuit, and wired that in to a breadboard.  The breadboard connects up a 2N3904 transistor as the switch across the trigger circuit, a 47k-ohm resistor, and a HC-SR501 PIR sensor.  See ![the Arduino file](PIRSensorGhost.ino) for all the details. 
 
 ## Spectral projection
 

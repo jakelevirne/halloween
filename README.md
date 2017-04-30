@@ -1,6 +1,6 @@
 # Haunted House
 
-This is a [video](https://www.youtube.com/watch?v=yRpC1_ZGsWk) of the 3rd annual haunted house that my daughters (aged 7 and 8) and I put on for our neighborhood:
+This is a [video](https://www.youtube.com/watch?v=yRpC1_ZGsWk) of the 3rd annual haunted house that my daughters (aged 7 and 8) and I put on for our neighborhood.  It's a great tradition for having fun, scaring our friends, and learning how to make new things.
 
 [![Hanted house](https://img.youtube.com/vi/yRpC1_ZGsWk/0.jpg)](https://www.youtube.com/watch?v=yRpC1_ZGsWk)
 

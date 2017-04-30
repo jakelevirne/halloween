@@ -30,4 +30,8 @@ Also, for the first time this year, there's a loud thunderclap produced by a sec
 
 ## Hall of masks
 
+![Hall of Masks](https://cloud.githubusercontent.com/assets/51732/25568211/ec2218f6-2dcb-11e7-9f6b-93d72d714607.jpg)
+
+This one is pure low tech.  Inspired by this [blog post](http://mizerella.blogspot.com/2011/01/13-black-light-mask-room.html), we glued a bunch of plastic masks to black plastic hung from the ceiling.  Add in a spooky whispers soundtrack plus black lights and this hallway becomes the freakiest part of the house.  If you really want to scare your guests, dress in all black, wear a matching mask, and stand in the corner.  No one will notice you until you jump out, causing lasting trauma.  This has been a go-to for us since the first annual haunted house, so it's time to lovingly retire it.
+
 ## IKEA bed coffin with reaper

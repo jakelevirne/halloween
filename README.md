@@ -23,7 +23,7 @@ This is a looping Halloween video, projected onto a frosted clear shower curtain
 
 ![Witch](https://cloud.githubusercontent.com/assets/51732/25568061/fbf3b8d2-2dc8-11e7-9fd4-4ef74aa7005c.jpg)
 
-This is another prop from Christmas Tree Shop that I hacked apart to be [trigger from an IR sensor](PIRSensorWitch.ino).  I found it handy to use CAT5 cable to run lines from her head/neck where the motor was down to the Arduino on the ground.  The video doesn't do it justice, but there's a cauldron with smoke from a fog machine, and flashing banks of LED lights in the cauldron controlled by DMX (the [protocol](https://en.wikipedia.org/wiki/DMX512), not the [rapper](https://en.wikipedia.org/wiki/DMX_(rapper)))
+This is another prop from Christmas Tree Shop that I hacked apart to be [triggered from an IR sensor](PIRSensorWitch.ino).  I found it handy to use CAT5 cable to run lines from her head/neck where the motor was down to the Arduino on the ground.  The video doesn't do it justice, but there's a cauldron with smoke from a fog machine, and flashing banks of LED lights in the cauldron controlled by DMX (the [protocol](https://en.wikipedia.org/wiki/DMX512), not the [rapper](https://en.wikipedia.org/wiki/DMX_(rapper)))
 
 Also, for the first time this year, there's a loud thunderclap produced by a second [Arduino](Thunder.ino) driving an amplified speaker using pulse code modulation.  This [high-low tech tip](http://highlowtech.org/?p=1963) was extremely handy.  Since this is triggered by the IR sensor, the timing is almost always perfect for a good startle.
 
